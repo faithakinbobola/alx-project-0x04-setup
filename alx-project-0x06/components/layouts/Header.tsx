@@ -6,7 +6,7 @@ import { RootState } from "@/store/store";
 
 const Header: React.FC = () => {
   const pathname = usePathname()
-  const { count } = useSelector((state: RootState) => state.counter.value)
+  const count = useSelector((state: RootState) => state.counter.value)
   return (
     <header className="fixed w-full bg-white shadow-md">
       <div className="container mx-auto flex justify-between items-center py-6 px-4 md:px-8">
